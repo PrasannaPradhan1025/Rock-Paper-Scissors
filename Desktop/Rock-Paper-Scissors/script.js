@@ -23,20 +23,20 @@ function getComputerChoice(){
 
 //Player choice
 
-const getHumanChoice = () => {
-    let x = window.prompt("Choose 'rock', 'paper' or 'scissors':").toLowerCase();
+// const getHumanChoice = () => {
+//     let x = window.prompt("Choose 'rock', 'paper' or 'scissors':").toLowerCase();
 
-    if (x === "rock") {
-        return "rock";
-    } else if (x === "paper") {
-        return "paper";
-    } else if (x === "scissors") {
-        return "scissors";
-    } else {
-        alert("Invalid choice!");
-        return getHumanChoice(); 
-    }
-};
+//     if (x === "rock") {
+//         return "rock";
+//     } else if (x === "paper") {
+//         return "paper";
+//     } else if (x === "scissors") {
+//         return "scissors";
+//     } else {
+//         alert("Invalid choice!");
+//         return getHumanChoice(); 
+//     }
+// };
 
 
 
@@ -96,39 +96,39 @@ function playRound(humanChoice,computerChoice){
 
 
 function playgame(){
-    console.log("lets start the game!!!")
-    console.log("1");
-    console.log("2");
-    console.log("3");
-    console.log("GOOOOO!!!!!");
-    
-    
-    
+            console.log("lets start the game!!!")
+            console.log("1");
+            console.log("2");
+            console.log("3");
+            console.log("GOOOOO!!!!!");
+            
+            
+            
 
-    for( let i =1;i<=5;i++){
+            for( let i =1;i<=5;i++){
 
-         const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
+                const humanSelection = getHumanChoice();
+                const computerSelection = getComputerChoice();
 
-             console.log(`Round ${i}:`);
-        playRound(humanSelection, computerSelection);
-
-
-            console.log(`ComputerScore:${computerScore}`);
-            console.log(`HumanScorerock:${humanScore}`);
-            console.log("----------------------------");
+                    console.log(`Round ${i}:`);
+                playRound(humanSelection, computerSelection);
 
 
-    }
-      if (humanScore > computerScore) {
-        console.log("🏆 You won the game!");
-    } else if (humanScore < computerScore) {
-        console.log("😔 You lost the game!");
-    } else {
-        console.log("😐 It's a draw!");
-    }
+                    console.log(`ComputerScore:${computerScore}`);
+                    console.log(`HumanScorerock:${humanScore}`);
+                    console.log("----------------------------");
 
-    
+
+            }
+            if (humanScore > computerScore) {
+                console.log("🏆 You won the game!");
+            } else if (humanScore < computerScore) {
+                console.log("😔 You lost the game!");
+            } else {
+                console.log("😐 It's a draw!");
+            }
+
+            
 }
 
 

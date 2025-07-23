@@ -1,0 +1,88 @@
+*{
+    padding: none;
+    margin: none;
+    background-color: #7D92C5;
+}
+body{
+    
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+
+
+.title h1{
+    color: black;
+    display: flex;
+    justify-content: center;
+    color:#932F6D ;
+    font-weight: 600;
+}
+
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.result-box {
+  background-color: #AB8ABB; /* soft inner color */
+  padding: 15px 30px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.result-box h2{
+    background-color: #932F6D;
+    border-radius: 5px;
+    color: #fafafa ;
+}
+
+.game-images .PlayerImage{
+    max-width: 350px;
+}
+
+
+.btn-container{
+ padding: 20px;
+
+ 
+ border: 20px;
+
+
+}
+.controls-buttons {
+    display: flex;
+  justify-content: center;    
+  align-items: center;  
+     
+
+}
+
+button {
+   margin: 8px 12px; 
+}
+
+#btn-rock, #btn-paper, #btn-scissors{
+  background-color: #932F6D; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+#btn-rock:hover, #btn-paper:hover, #btn-scissors:hover{
+    background-color:#dc339b ;
+}
+
+
